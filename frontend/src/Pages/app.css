@@ -1,0 +1,82 @@
+/* General card container */
+.reminder-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    gap: 1.5rem; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+    padding: 1rem;
+}
+
+/* Individual card */
+.reminder-card {
+    flex: 1 1 100%; /* Take up 25% of the row minus the gap */
+    max-width: 400px;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    color: #374151; /* Tailwind's gray-800 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.reminder-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Button inside card */
+.reminder-card button {
+    background-color: #ef4444; /* Tailwind's red-500 */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reminder-card button:hover {
+    background-color: #dc2626; /* Tailwind's red-600 */
+}
+
+.react-datetime-picker__calendar {
+    width: 350px;
+    max-width: 100vw;
+    background-color: #ffffff; /* Ensure solid white background */
+    border: thin solid #d1d5db; /* Light gray border */
+    border-radius: 8px; /* Rounded corners for modern look */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+    padding: 10px; /* Add some padding */
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+  .react-datetime-picker__calendar .react-calendar {
+    border: none; /* Remove default border */
+  }
+  
+  .react-datetime-picker__calendar .react-calendar__tile {
+    padding: 10px;
+    background-color: #f9fafb; /* Light background for tiles */
+    color: #374151; /* Neutral text color */
+    border-radius: 5px; /* Rounded corners for tiles */
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .react-datetime-picker__calendar .react-calendar__tile:hover {
+    background-color: #6366f1; /* Indigo on hover */
+    color: white; /* White text on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .react-datetime-picker__calendar .react-calendar__tile--active {
+    background-color: #4f46e5; /* Darker indigo for active tile */
+    color: white;
+  }
+  
+  .react-datetime-picker__clock {
+    background-color: #ffffff;
+    border: thin solid #d1d5db;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
